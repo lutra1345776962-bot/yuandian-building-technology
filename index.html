@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#244c43">
+  <meta name="description" content="圆点建筑工作室的建筑技术学习站，包含课程知识、教材图示、比较表与各模块完整填空练习。">
+  <title>圆点建筑工作室 · 建筑技术学习手册</title>
+  <link rel="icon" type="image/png" href="assets/brand/yuandian-logo.png">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="data/inventory.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到正文</a>
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="#/home" aria-label="圆点建筑工作室首页"><img class="studio-logo" src="assets/brand/yuandian-logo.png" width="40" height="40" alt="圆点建筑工作室标识"><span>圆点建筑工作室<small>建筑技术 · 学习手册</small></span></a>
+    <div class="edition">COURSE READER <span>建筑技术课程</span></div>
+    <nav class="primary-nav" aria-label="主导航">
+      <a href="#/home" data-nav="home"><span>⌂</span> 学习首页</a>
+      <a href="#/catalog" data-nav="catalog"><span>☷</span> 全量知识目录 <small>8模块</small></a>
+      <a href="#/practice" data-nav="practice"><span>✎</span> 随堂练习</a>
+      <a href="#/review" data-nav="review"><span>☆</span> 我的复习</a>
+    </nav>
+    <div class="sidebar-bottom"><p>先理解，再回忆。</p><span>覆盖8个模块的课程知识<br>主讲：春羽 · 本地学习记录</span><a href="交付文档/网站目录与迁移设计.md" download>查看网站目录 ↗</a></div>
+  </aside>
+  <div class="page-watermark" aria-hidden="true"><span><img src="assets/brand/yuandian-logo.png" alt="">圆点建筑工作室</span><span><img src="assets/brand/yuandian-logo.png" alt="">圆点建筑工作室</span><span><img src="assets/brand/yuandian-logo.png" alt="">圆点建筑工作室</span><span><img src="assets/brand/yuandian-logo.png" alt="">圆点建筑工作室</span><span><img src="assets/brand/yuandian-logo.png" alt="">圆点建筑工作室</span><span><img src="assets/brand/yuandian-logo.png" alt="">圆点建筑工作室</span><span><img src="assets/brand/yuandian-logo.png" alt="">圆点建筑工作室</span><span><img src="assets/brand/yuandian-logo.png" alt="">圆点建筑工作室</span><span><img src="assets/brand/yuandian-logo.png" alt="">圆点建筑工作室</span><span><img src="assets/brand/yuandian-logo.png" alt="">圆点建筑工作室</span><span><img src="assets/brand/yuandian-logo.png" alt="">圆点建筑工作室</span><span><img src="assets/brand/yuandian-logo.png" alt="">圆点建筑工作室</span></div>
+  <div class="shell">
+    <header class="topbar"><button id="menu-toggle" class="icon-button mobile-menu" aria-label="展开目录" aria-expanded="false">☰</button><a class="mobile-brand" href="#/home" aria-label="圆点建筑工作室首页"><img src="assets/brand/yuandian-logo.png" width="28" height="28" alt="圆点建筑工作室标识"><span>圆点建筑工作室</span></a><div id="breadcrumb">秋季课程 <span>/</span> 学习首页</div><div class="top-actions"><button id="search-toggle" class="search-trigger">⌕ <span>搜索知识点</span><kbd>/</kbd></button><button id="focus-toggle" class="quiet-button">专注阅读</button><span class="local-indicator">在线学习</span></div></header>
+    <main id="main" tabindex="-1"></main>
+    <footer class="site-footer"><span>圆点建筑工作室 · 建筑技术学习手册</span><span>全量盘点已完成 · 当前展示代表性样板</span></footer>
+  </div>
+  <dialog id="search-dialog"><div class="search-head"><label for="global-search">搜索全量知识清单</label><button id="search-close" class="icon-button" aria-label="关闭搜索">×</button></div><input id="global-search" type="search" placeholder="试试“倒置式屋面”“混响”“数字孪生”" autocomplete="off"><div id="search-results" class="search-results"></div></dialog>
+  <dialog id="image-dialog"><div class="image-dialog-bar"><span id="image-caption"></span><button id="image-close" class="icon-button" aria-label="关闭大图">×</button></div><div class="zoom-image-area"><img id="large-image" alt=""><span class="zoom-watermark" aria-hidden="true"><img src="assets/brand/yuandian-logo.png" alt="">圆点建筑工作室</span></div></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
