@@ -20,3 +20,17 @@
 @media(max-width:1200px){.page-watermark{left:226px}.brand{font-size:16px;gap:9px}.studio-logo{width:37px;height:37px}.page-watermark>span{font-size:18px;letter-spacing:1px}.page-watermark img{width:24px;height:24px}}
 @media(max-width:760px){.mobile-brand{display:flex;align-items:center;gap:8px;white-space:nowrap;font-family:var(--serif);font-size:12px;color:var(--ink)}.mobile-brand img{width:27px;height:27px;object-fit:contain}#breadcrumb{display:none}.topbar{gap:12px}.top-actions{gap:8px}.page-watermark{left:0;top:65px;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(6,minmax(0,1fr));opacity:.075}.page-watermark>span{font-size:13px;letter-spacing:1px;gap:6px}.page-watermark img{width:18px;height:18px}.zoom-watermark{font-size:20px;gap:8px;letter-spacing:1px}.zoom-watermark img{width:27px;height:27px}.brand{font-size:17px;gap:11px}.studio-logo{width:40px;height:40px}}
 @media print{.page-watermark{inset:0!important;opacity:.08;print-color-adjust:exact;-webkit-print-color-adjust:exact}.mobile-brand{display:none!important}}
+
+/* Construction diagrams appear with their corresponding knowledge records. */
+.construction-figures{margin:20px 0 24px;min-width:0}
+.construction-figures-heading{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:10px}
+.construction-figures-heading h4{margin:0;font-size:15px;color:var(--green)}
+.construction-figures-heading span{font-size:11px;color:var(--muted)}
+.construction-figure-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.construction-figure-grid.single-figure{grid-template-columns:minmax(0,1fr)}
+.construction-figure{margin:0;padding:18px;background:#fff;border:1px solid var(--line);min-width:0;display:flex;flex-direction:column;gap:14px}
+.construction-figure img{display:block;width:auto;height:auto;max-width:100%;max-height:600px;object-fit:contain;margin:auto;cursor:zoom-in}
+.construction-figure img:focus-visible{outline:2px solid var(--green);outline-offset:5px}
+.construction-figure figcaption{padding-top:11px;border-top:1px solid var(--line);color:var(--muted);font-size:12px;line-height:1.7;overflow-wrap:anywhere}
+@media(max-width:760px){.construction-figure-grid{grid-template-columns:minmax(0,1fr)}.construction-figure{padding:12px}.construction-figures-heading{display:block}.construction-figures-heading span{display:block;margin-top:3px}.construction-figure img{max-height:540px}}
+@media print{.construction-figure{break-inside:avoid}.construction-figures-heading span{display:none}}
